@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Checkout CD</title>
+</head>
+<body>
+<form id="account-form">
+<label>Customer ID: &nbsp</label><input name="customer_id"
+type="text"/>
+<br>
+<br>
+<label>CD ID: &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp</label><input name="cd_id"
+type="text"/>
+<br>
+<input type="submit"/>
+</form>
+
+{% if rental_contract %}
+Rental Contract: {{ rental_contract }}
+{% endif %}
+
+</body>
+</html>
+
